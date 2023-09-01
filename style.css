@@ -1,0 +1,100 @@
+h1 {
+  color:black;
+  border: 10px Solid orange;
+  font-family:'Times New Roman', Times, serif;
+  height: 125px;
+  text-align: center;
+
+}
+p {
+  border: 2px Solid orange;
+  background: orange;
+  height: 75px;
+  font-style: italic; 
+  font-size:130%;
+}
+article {
+  border: 2px Solid orange;
+  background: orange;
+  font-style: italic;
+  font-size:130%;
+}
+img {
+  border: 10px Solid orange;
+}
+h3 {
+  color:black;
+  border: 10px solid orange;
+  height: 60px;
+}
+.grid{
+  display:grid;
+  grid-template-columns: auto auto auto auto;
+}
+.image{max-width:30%;
+display:block;
+}
+label {
+  color:black;
+}
+h2 {
+  color:orange;
+}
+a:link {
+  color: red;
+}
+a:visited {
+  color: yellow;
+}
+a:hover {
+  color: orange;
+}
+
+
+article.intro::first-letter{
+color: red;
+font-size: 50px;
+}
+
+article::after {
+  content: '\1F305''\1F305''\1F305';
+}
+
+.card-img-top {
+  width: 100%;
+  height: 25vw;
+  object-fit: cover;
+}
+
+h5 {
+  color: red;
+}
+.animated-div {
+  width: 250px;
+  height: 5px;
+  background-color: red;
+  animation-name: example;
+  animation: slide-transform 4s infinite;
+}
+
+@keyframes slide-transform {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(125vw);
+    border-radius: 50%;
+  }
+
+  100% {
+    transform: translateX(0);
+    border-radius: 0;
+  }
+
+    0% {background-color: red;}
+    25% {background-color: yellow;}
+    50% {background-color: red;}
+    75% {background-color: orange;}
+    100% {background-color: yellow;}
+}
