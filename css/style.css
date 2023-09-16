@@ -98,3 +98,7 @@ h5 {
     75% {background-color: orange;}
     100% {background-color: yellow;}
 }
+
+@media screen and (orientation: landscape) {
+  //CSS rules 
+}
